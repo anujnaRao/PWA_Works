@@ -1,0 +1,15 @@
+{
+  "name": "table_pwa",
+  "version": "1.0.0",
+  "description": "Progressive web application using nodejs and docker container",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "author": "Anujna P Rao",
+  "license": "ISC"
+}
