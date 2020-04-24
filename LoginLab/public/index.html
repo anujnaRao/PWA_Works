@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="theme-color" content="#2196f3">
+  <!-- Bootstrap CSS -->
+  <link rel="icon" href="./icon-384x384.png">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./css/jquery-3.4.0.slim.min.js"></script>
+  <script src="./css/bootstrap.js"></script>
+  <script src="./css/popper.min.js"></script>
+  <script src="./css/tooltip.min.js"></script>
+  <link rel="manifest" href="./manifest.json">
+
+  <title>Login</title>
+</head>
+
+<body>
+  <!-- start body -->
+  <div class="container">
+    <h3 class="textfont text-center font-weight-bold">Login Page</h3>
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class=" card card-signin">
+          <div class="card-title">Login !</div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control " id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+            </div>
+            <input type="button" class="btn btn-primary" value="Submit" name="submit" onclick="checkValidation()" />
+            <input type="button" class="btn btn-primary" value="Clear" name="submit" onclick="checkClear()" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end body -->
+  <script>
+    function checkValidation() {
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("pwd").value;
+      if (email === 'anujna@gmail.com' && password === 'anu@123') {
+        alert("Validation done!");
+        window.location = "display.html";
+        document.getElementById('email').value = "";
+        document.getElementById('pwd').value = "";
+      }
+      else {
+        alert("Invalid username or password!")
+      }
+    }
+
+    function checkClear() {
+      document.getElementById('email').value = "";
+      document.getElementById('pwd').value = "";
+    }
+  </script>
+  <script src='./js/app.js'></script>
+</body>
+
+</html>

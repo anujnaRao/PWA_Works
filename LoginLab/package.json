@@ -1,0 +1,15 @@
+{
+  "name": "loginlab",
+  "version": "1.0.0",
+  "description": "Login Page with PWA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "author": "Anujna",
+  "license": "ISC"
+}

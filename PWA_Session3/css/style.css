@@ -63,7 +63,7 @@
 
 body {
     background: grey;
-    background: linear-gradient(to right, rebeccapurple, lightcoral);
+    background: linear-gradient(to right, rgb(175, 114, 23), rgb(18, 89, 131));
 }
 
 .card-signin {

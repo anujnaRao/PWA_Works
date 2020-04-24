@@ -1,0 +1,85 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+}
+
+.logo {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    padding-top: 0%;
+    margin-right: 0px;
+}
+ .tcol1{
+     margin-top: 1%;
+     padding: 5px;
+
+ }
+
+.tcol2{
+    margin-top: 1%;
+    padding: 5px;
+
+}
+
+/*.tcontainer{*/
+/*    margin-top: 4%;*/
+/*    margin-bottom: 3%;*/
+/*}*/
+
+
+
+body {
+    background: grey;
+    background: linear-gradient(to left, rgb(94, 74, 18), rgb(26, 44, 95));
+    /* background: no-repeat; */
+    
+}
+
+.textfont{
+    margin-top: 100px;
+    font-size: 30pt;
+    color: burlywood;
+    margin-bottom: 5%;
+}
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-signin .card-title {
+    margin-top: 0px;
+    padding-bottom: 5px ;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px rgb(26, 44, 95) solid;
+}
+
+.card-signin .card-body {
+    padding: 2rem;
+    border: 1px;
+}
+
+.form-group{
+    padding: 5px;
+    font-weight: bold;
+}
+
+ .btn {
+    margin-right: 10px ;
+    font-weight: bold;
+    width: 40%;
+}
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
