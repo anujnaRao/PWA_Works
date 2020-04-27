@@ -17,54 +17,233 @@
   <script src="./css/tooltip.min.js"></script>
   <link rel="manifest" href="./manifest.json">
 
-  <title>Login</title>
+  <title>Simple Web Page</title>
 </head>
 
 <body>
   <!-- start body -->
-  <div class="container">
-    <h3 class="textfont text-center font-weight-bold">Login Page</h3>
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class=" card card-signin">
-          <div class="card-title">Login !</div>
-          <div class="card-body">
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control " id="email" placeholder="Enter email" name="email" required>
+
+  <div class="card main">
+    <div class="card-body">
+
+      <div class="container-fluid">
+        <h3 class="textfont text-center font-weight-bold">Beautiful Places</h3>
+        
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/mysore-palace.jpg" alt="Mysore Palace" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Mysore Palace, Karnataka</h4>
+                <p class="card-text">Completely rebuilt in 1897 after a devastating fire, 
+                  this beautiful three-storied palace features highlights such as its elegant square towers and domes; t
+                  he many ornate ceilings and pillars in Durbar Hall; and the splendid Marriage Pavilion, 
+                  with its glazed floor tiles, stunning stained glass, artworks, and displays of jewelry (On special days, the Golden Throne).</p>  
+                <button id="display" class="btn btn-primary" ><a href="./display.html">See About Mysore</a></button>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="pwd">Password:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/taj-mahal.jpg" alt="Taj Mahal" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Taj Mahal, Agra</h4>
+                <p class="card-text">Incorporating many elements of Islamic design including arches, minarets, an onion-shaped dome, 
+                  and black calligraphy inlaid around the entrance, the Taj Mahal is largely constructed of white marble decorated 
+                  with delicate inlaid floral patterns and precious and semi-precious stones such as jade,
+                   lapis lazuli, diamonds, and mother of pearl.</p>
+                <a href="#" class="btn btn-primary">See About Agra</a>
+              </div>
             </div>
-            <input type="button" class="btn btn-primary" value="Submit" name="submit" onclick="checkValidation()" />
-            <input type="button" class="btn btn-primary" value="Clear" name="submit" onclick="checkClear()" />
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/varanasi.jpg" alt="Varanasi" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">The Holy City of Varanasi</h4>
+                <p class="card-text">A major pilgrimage center for Hindus, the holy city of Varanasi has long been 
+                  associated with the mighty Ganges River, one of the faith's most important religious symbols. 
+                  Dating back to the 8th century BC, Varanasi is one of the oldest still inhabited cities in the world.
+                  It offers many reasons to visit, nthe chance to explore the Old Quarter adjacent to the 
+                  Ganges where you'll find the Kashi Vishwanath Temple, built in 1780</p>
+                <a href="#" class="btn btn-primary">See About Varanasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/harmandir-sahib.jpg" alt="Golden Temple" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Golden Temple, Amritsar</h4>
+                <p class="card-text">The holiest of India's many Sikh shrines (it also attracts many Hindus and people of other faiths), t
+                  he temple was built in a blend of Hindu and Islamic styles, its lower marble section featuring such flourishes as ornate inlaid floral and animal motifs,
+                   while the large golden dome represents a lotus flower, a symbol of purity to Sikhs.</p>
+                <a href="#" class="btn btn-primary">See About Amritsar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/red-fort.jpg" alt="Red Fort" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Red Fort, Delhi</h4>
+                <p class="card-text">Built by Shah Jahan in 1648 as the seat of Mughal power-a role it maintained until 1857-the magnificent 
+                  crescent-shaped Red Fort in New Delhi, named after the stunning red sandstone used in its construction, 
+                  covers a vast area of more than two square kilometers, all of it surrounded by a large moat.</p>
+                <a href="#" class="btn btn-primary">See About Delhi</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/gateway-india.jpg" alt="Gateway of India" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Gateway of India, Mumbai</h4>
+                <p class="card-text">Standing an impressive 26 meters tall and overlooking the Arabian Sea,
+                   the iconic Gateway of India is a must-see when in Mumbai.
+                   Constructed entirely of yellow basalt and concrete and notable for its Indo-Saracenic design,
+                    the Gateway of India was also the scene of a  procession of British soldiers in 1948 when India gained its independence.</p>
+                <a href="#" class="btn btn-primary">See About Mumbai</a>
+              </div>
+            </div>
+          </div> 
+        </div>
+    
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/jaisalmer.jpg" alt="Golden City" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Golden City, Jaisalmer</h4>
+                <p class="card-text">So named for the yellow sandstone used in most of its buildings, 
+                  the Golden City of Jaisalmer is an oasis of splendid old architecture that rises from the sand dunes of the Thar Desert.
+                   Once a strategic outpost, today the city is filled with splendid old mansions, magnificent gateways, 
+                   and the massive Jaisalmer Fort-also known as the Golden Fort-a daunting 12th-century structure that rises high above the town.</p>
+                <a href="#" class="btn btn-primary">See About Jaisalmer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/mecca-masjid.jpg" alt="mecca-masjid" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Mecca Masjid, Hyderabad</h4>
+                <p class="card-text">Construction of Hyderabad's Mecca Masjid, one of the world's largest mosques-and one of the oldest in 
+                  India-began in 1614 during Mohammed Quli Qutub Shah's reign and took almost 80 years to complete. 
+                  Taking its name from the bricks above the central gate that were brought here from Mecca, 
+                  this impressive complex features highlights such as its main gateway,
+                   huge plaza, a large manmade pond. </p>
+                <a href="#" class="btn btn-primary">See About Hyderabad</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/amer-fort.jpg" alt="Amer Fort" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Amer Fort, Jaipur</h4>
+                <p class="card-text">Amer Fort (often also spelt "Amber") was built as a fortified palace in 1592 by Maharaja Man Singh I
+                   and has long served as the capital of Jaipur. Carved high up into the hillside, the fort is accessible on foot via a steep climb
+                    or by shuttle rides from the town below (better still, let an elephant do the work). 
+                    Just above Amer Fort is Jaigarh Fort, built in 1726 by Jai Singh and featuring tall lookout towers, 
+                    formidable walls, and the world's largest wheeled cannon. </p>
+                <a href="#" class="btn btn-primary">See About Jaipur</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/goa-beaches.jpg" alt="Goa" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Goa Beaches</h4>
+                <p class="card-text">Long known within India as the "go-to" destination for those seeking a great beach holiday, Goa's beautiful western coastline,
+                   overlooking the Arabian Sea, has only recently been discovered by tourists from overseas.
+                  Goa's more than 60 miles of coastline is home to some of the world's loveliest beaches, each with their own particular appeal. </p>
+                <a href="#" class="btn btn-primary">See About Goa</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/periyar-national-park-wildlife-sanctuary.jpg" alt="National Park" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Periyar National Park, Hyderabad</h4>
+                <p class="card-text">Established in 1934, this beautiful park is home to numerous species of mammals, including a large
+                   free-roaming Indian elephant population, wild boar, otters, the lion-tailed macaque, and more than 20 Bengal tigers. 
+                   Bird watching is a popular activity with frequent sightings of species such as darters, and hornbills, 
+                   along with many interesting varieties of butterflies.</p>
+                <a href="#" class="btn btn-primary">See About Madhurai</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/agra-fort.jpg" alt="Agra Fort" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Agra Fort, Uttar Pradesh</h4>
+                <p class="card-text">Built as a military structure in 1565 by Emperor Akbar with later additions by Shah Jahan,
+                   the stunning Agra Fort (also known as Agra's Red Fort) is an interesting mix of both Hindu and Muslim influences. 
+                   Located a little more than two kilometers from the Taj Mahal, the fort is entered through Amar Singh Gate with its 
+                   low outer wall and dogleg design built to confuse attackers. </p>
+                <a href="#" class="btn btn-primary">See About Agra</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/ellora-caves.jpg" alt="Ellora Caves" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Ellora Caves, Aurangabad</h4>
+                <p class="card-text">Now a UNESCO World Heritage Site, this remarkable collection of 34 carved monasteries, chapels, and temples-12 of them Buddhist, 
+                  17 Hindu, and five belonging to the Jain faith-were built in close proximity to each other,
+                   a reflection of the religious tolerance that existed during this period of Indian history.</p>
+                <a href="#" class="btn btn-primary">See About Aurangabad</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/mehrangarh-fort.jpg" alt="Mehrangarh Fort" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Mehrangarh Fort, Jodhpur</h4>
+                <p class="card-text">Built on top of a towering outcrop, Mehrangarh is an amazing feat of construction, 
+                  its massive walls all but impenetrable. Access is via one of seven splendid gates, 
+                  including Jaya Pol and Fateh Pol.
+                  Highlights of a visit include exploring the fort's fascinating network of courtyards and palaces, 
+                  a museum housing a splendid collection of artifacts related to the Maharajas. </p>
+                <a href="#" class="btn btn-primary btn-group">See About Jodhpur</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
+            <div class=" card">
+              <img src="img/pictures/mahabodhi-temple.jpg" alt="Mahabodhi Temple" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Mahabodhi Temple, Bodhgaya</h4>
+                <p class="card-text">Bodhgaya, considered the world's holiest Buddhist site, attracts thousands of visitors each year, 
+                  all drawn to participate with the resident monks in meditation and prayer. The focal point of this place of pilgrimage is stunning Mahabodhi Temple, 
+                  built next to the very spot where Buddha came to Enlightenment and formulated his philosophy on life. </p>
+                <a href="#" class="btn btn-primary">See About Bodhgaya</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
-  <!-- end body -->
-  <script>
-    function checkValidation() {
-      let email = document.getElementById("email").value;
-      let password = document.getElementById("pwd").value;
-      if (email === 'anujna@gmail.com' && password === 'anu@123') {
-        alert("Validation done!");
-        window.location = "display.html";
-        document.getElementById('email').value = "";
-        document.getElementById('pwd').value = "";
-      }
-      else {
-        alert("Invalid username or password!")
-      }
-    }
 
-    function checkClear() {
-      document.getElementById('email').value = "";
-      document.getElementById('pwd').value = "";
-    }
-  </script>
+  
+  <!-- end body -->
   <script src='./js/app.js'></script>
 </body>
 

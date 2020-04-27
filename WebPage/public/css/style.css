@@ -31,26 +31,27 @@
 
 body {
     background: grey;
-    background: linear-gradient(to left, rgb(94, 74, 18), rgb(26, 44, 95));
+    background: linear-gradient(to bottom left, rgb(150, 46, 115), rgb(16, 92, 54));
     /* background: no-repeat; */
     
+}
+
+.main{
+    background: transparent;
 }
 
 .textfont{
     margin-top: 100px;
     font-size: 30pt;
-    color: burlywood;
+    color: darksalmon;
     margin-bottom: 5%;
 }
 
-.card-signin {
-    border: 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-    padding: 20px;
+.row{
+    margin-bottom: 5%;
 }
 
-.card-signin .card-title {
+.card-title {
     margin-top: 0px;
     padding-bottom: 5px ;
     font-weight: 300;
@@ -59,21 +60,30 @@ body {
     border-bottom: 2px rgb(26, 44, 95) solid;
 }
 
-.card-signin .card-body {
+
+.card-body {
     padding: 2rem;
     border: 1px;
+    text-align: center;
 }
 
 .form-group{
     padding: 5px;
     font-weight: bold;
 }
-
- .btn {
-    margin-right: 10px ;
-    font-weight: bold;
-    width: 40%;
+.btn a{
+    color: white;
+    text-decoration: none;
 }
+ .btn {
+    
+    font-weight: bold;
+ }
+
+
+ .card-img{
+     height:200%;
+ }
 .carousel-item {
     height: 65vh;
     min-height: 350px;

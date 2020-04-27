@@ -1,0 +1,18 @@
+{
+   "users":[ {
+        "username":"anujna@gmail.com",
+        "password":"anu@123"
+    },
+    {
+        "username":"anjali@gmail.com",
+        "password":"anju@123"
+        },
+    {
+        "username":"bhushan@gmail.com",
+        "password":"bhai@123"
+        },
+    {
+        "username":"mangala@gmail.com",
+        "password":"abc@123"
+        } ]       
+}
