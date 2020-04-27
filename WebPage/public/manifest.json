@@ -1,6 +1,6 @@
 {
-  "name": "Login App",
-  "short_name": "Table",
+  "name": "Simple Web Page",
+  "short_name": "Web",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",

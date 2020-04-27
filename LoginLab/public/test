@@ -1,0 +1,47 @@
+<script>
+     let fetchJSONButton = document.getElementById('fetchjson');
+      fetchJSONButton.addEventListener('click', checkValidation);
+
+    function checkValidation() {
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("pwd").value;
+
+      fetch('data.json')
+      .then( result =>{
+        return result.json()
+      })
+      .then(res =>{
+        console.log(res)
+        let flag = false
+        for(value in res){
+          var uname = value["username"] 
+          var pswd = value["password"] 
+          console.log(uname, pswd);
+          if (email === uname && password === pswd) {
+            flag = true;
+          }
+        }
+        if( flag === true){
+          alert("Validation done!");
+          window.location = "./successful.html";
+           document.getElementById('email').value = "";
+           document.getElementById('pwd').value = "";
+        }
+        else {
+          alert("Invalid username or password!");
+          window.location = "./unsuccessful.html";
+        }
+        
+      })
+      .catch(err =>{
+        alert(err);
+     })
+
+     
+
+    }
+    function checkClear() {
+      document.getElementById('email').value = "";
+      document.getElementById('pwd').value = "";
+    }
+  </script>

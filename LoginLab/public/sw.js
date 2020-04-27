@@ -30,49 +30,48 @@ self.addEventListener('activate', eve =>{
     console.log("Activated");
 })
 
-self.addEventListener('fetch', function (event) {
-	event.respondWith(
-		fetch(event.request).catch(function () {
-			return caches.match(event.request).then(function (response) {
-				if (response) {
-					return response;
-				} else if (event.request.headers.get('accept').includes('text/html')) {
-					return caches.match('./offline.html');
-				} else if (response.status === 404) {
-					return caches.match('./404.html');
-				}
-			});
-		})
-	);
-});
+// self.addEventListener('fetch', function (event) {
+// 	event.respondWith(
+// 		fetch(event.request).catch(function () {
+// 			return caches.match(event.request).then(function (response) {
+// 				if (response) {
+// 					return response;
+// 				} else if (event.request.headers.get('accept').includes('text/html')) {
+// 					return caches.match('./offline.html');
+// 				} else if (response.status === 404) {
+// 					return caches.match('./404.html');
+// 				}
+// 			});
+// 		})
+// 	);
+// });
 
 
 //Dynamic and Static Caching
-// self.addEventListener('fetch', event =>{
-//     console.log('Fetch event for', event.request.url);
-//     event.respondWith(
-//         caches.match(event.request)
-//         .then(response =>{
-            
-//             if(response){
-//                 console.log('Found', event.request.url,'in cache');
-//                 return response;
-//             }
-//             if(response.status == 404 ){
-//                 return caches.match('./404.html');
-//             }
-//             console.log('Network request for',event.request.url);
-//             return fetch(event.request) 
-//             .then( response =>{
-//                 return caches.open(CACHE_NAME)
-//                 .then( cache =>{
-//                     cache.put(event.request.url, response.clone());
-//                 })
-//             })
-//         })
-//         .catch( err =>{
-//             console.error(err);
-//             return caches.match('./offline.html')
-//         })
-//     )
-// })
+self.addEventListener('fetch', event =>{
+    console.log('Fetch event for', event.request.url);
+    event.respondWith(
+        caches.match(event.request)
+        .then(response =>{
+            if(response){
+                console.log('Found', event.request.url,'in cache');
+                return response;
+            }
+            console.log('Network request for',event.request.url);
+            return fetch(event.request) 
+            .then( response =>{
+                if( response.status === 404){
+                    return caches.match('404.html');
+                }
+                return caches.open(CACHE_NAME)
+                .then( cache =>{
+                    cache.put(event.request.url, response.clone());
+                })
+            })
+        })
+        .catch( err =>{
+            console.error(err);
+            return caches.match('offline.html')
+        })
+    )
+})

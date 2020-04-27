@@ -49,8 +49,6 @@
      let fetchJSONButton = document.getElementById('fetchjson');
       fetchJSONButton.addEventListener('click', checkValidation);
 
-      let keys =[]
-
     function checkValidation() {
       let email = document.getElementById("email").value;
       let password = document.getElementById("pwd").value;
@@ -61,35 +59,20 @@
       })
       .then(res =>{
         console.log(res)
-        for( i in res)
-        let flag = false
-        for(value in res){
-          var uname = value["username"] 
-          var pswd = value["password"] 
-          console.log(uname, pswd);
-          if (email === uname && password === pswd) {
-            flag = true;
-          }
+        em = res.name
+        pas = res.pass
+
+        if(email === em && password === pas){
+          window.location = 'successful.html'
+        }else{ 
+          window.location = 'unsuccessful.html'
         }
-        if( flag === true){
-          alert("Validation done!");
-          window.location = "./successful.html";
-           document.getElementById('email').value = "";
-           document.getElementById('pwd').value = "";
-        }
-        else {
-          alert("Invalid username or password!");
-          window.location = "./unsuccessful.html";
-        }
-        
       })
       .catch(err =>{
         alert(err);
      })
-
-     
-
     }
+    
     function checkClear() {
       document.getElementById('email').value = "";
       document.getElementById('pwd').value = "";

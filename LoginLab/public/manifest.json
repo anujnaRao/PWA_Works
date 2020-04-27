@@ -1,6 +1,6 @@
 {
   "name": "Login App",
-  "short_name": "Table",
+  "short_name": "Login",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
