@@ -1,65 +1,42 @@
-if('serviceWorker' in navigator){
+if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js')
-    .then(registration =>{
-        console.log('Service worker registered in scope : ',registration.scope);
-    })
-    .catch(err => {
-        console.error(err);
-    })
+        .then(registration => {
+            console.log('Service worker registered in scope : ', registration.scope);
+        })
+        .catch(err => {
+            console.error(err);
+        })
 }
 
 
 
-// document.getElementById("mysorebtn") 
-//         .addEventListener('click', function() { 
-      
-//             fetch('mysore.txt')
-//             .then(function (response) {
-//                 return response.text();
-//             })
-//             .then(function (data) {
-//                 console.log(data)
-//                 append_to_div("displayText",data);
-//             })
-//             .catch(function (err) {
-//                 console.log('error: ' + err);
-//             });
-// }); 
-
-// function append_to_div(div_name, data){ 
-//     document.getElementById(div_name).innerText += data; 
-//     console.log(data)
-// } 
-  
+let fetchTEXTButton = document.getElementById('fetchDetails');
+fetchTEXTButton.addEventListener('click', fetchFunction);
 
 // Using Form Request
-// postRequest('http://example.com/api/v1/users', {user: 'Dan'})
-//   .then(data => console.log(data)) // Result from the `response.json()` call
-//   .catch(error => console.error(error))
+function fetchFunction() {
+    let user = document.getElementById("username").value;
+    fetch('https://api.github.com/users/' + user)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            document.getElementById('uid').innerHTML = data.login;
+            document.getElementById('uname').innerHTML = data.name;
+            document.getElementById('userimg').src = data.avatar_url;
+            document.getElementById('profile').innerHTML = data.html_url;
+            document.getElementById('pro').href = data.html_url;
+            document.getElementById('location').innerHTML = data.location;
+            document.getElementById('bio').innerHTML = data.bio;
+            document.getElementById('company').innerHTML = data.company;
+            document.getElementById('created').innerHTML = data.created_at;
+            document.getElementById('updated').innerHTML = data.updated_at;
 
-// function postRequest(url, data) {
-//   return fetch(url, {
-//     credentials: 'same-origin', // 'include', default: 'omit'
-//     method: 'POST', // 'GET', 'PUT', 'DELETE', etc.
-//     body: JSON.stringify(data), // Coordinate the body type with 'Content-Type'
-//     headers: new Headers({
-//       'Content-Type': 'application/json'
-//     }),
-//   })
-//   .then(response => response.json())
-// }
+        })
+        .catch(error => console.error(error))
+}
 
-// Using Form Post
-// postForm('http://example.com/api/v1/users')
-//   .then(data => console.log(data))
-//   .catch(error => console.error(error))
-
-// function postForm(url) {
-//   const formData = new FormData(document.querySelector('form.edit-user'))
-
-//   return fetch(url, {
-//     method: 'POST', // or 'PUT'
-//     body: formData  // a FormData will automatically set the 'Content-Type'
-//   })
-//   .then(response => response.json())
-// }
+// let val = Object.values(data)
+//     let key = Object.keys(data)
+//     for(let i=0; i< key.length; i++){
+//         console.log(key[i])
+//         console.log(val[i])

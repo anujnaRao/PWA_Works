@@ -1,6 +1,6 @@
 {
-  "name": "Simple Web Page",
-  "short_name": "Web",
+  "name": "GitHub Profile",
+  "short_name": "GitHub",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",

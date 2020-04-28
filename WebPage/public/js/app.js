@@ -10,44 +10,92 @@ if('serviceWorker' in navigator){
 
 //to display in next page
 
-// let fetchTEXTButton = document.getElementById('mysorebtn');
-// fetchTEXTButton.addEventListener('click', fetchMysoreFunction);
+let fetchTEXTButton = document.getElementById('mysorebtn');
+fetchTEXTButton.addEventListener('click', fetchMysoreFunction);
 
-// function fetchMysoreFunction(){
-//     fetch('mysore.txt')
-//     .then( result =>{
-//         return result.text()
-//     })
-//     .then(res =>{
-//         console.log(res)
-//         let displaydiv = document.getElementById('display');
-//         displaydiv.appendChild(res);
-//     })
-//     .catch(err =>{
-//         console.error(err);
-//     })
-// }
+function fetchMysoreFunction(){
+
+fetch('../textfiles/mysore.txt')
+.then(response => response.text())
+.then(data=> {
+    document.getElementById("displayText").innerHTML =""
+    document.getElementById("displayText").innerHTML = data
+})
+.catch(error => console.error(error));
+}
 
 
+let fetchTEXTButton1 = document.getElementById('agrabtn');
+fetchTEXTButton1.addEventListener('click', fetchAgraFunction);
 
-document.getElementById("mysorebtn") 
-        .addEventListener('click', function() { 
-      
-            fetch('mysore.txt')
-            .then(function (response) {
-                return response.text();
-            })
-            .then(function (data) {
-                console.log(data)
-                append_to_div("displayText",data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-}); 
+function fetchAgraFunction(){
 
-function append_to_div(div_name, data){ 
-    document.getElementById(div_name).innerText += data; 
+fetch('../textfiles/agrataj.txt')
+.then(response => response.text())
+.then(data=> {
+    document.getElementById("displayText").innerHTML =""
+    document.getElementById("displayText").innerHTML = data
     console.log(data)
-} 
-  
+})
+.catch(error => console.error(error));
+}
+
+
+let fetchTEXTButton2 = document.getElementById('varanasibtn');
+fetchTEXTButton2.addEventListener('click', fetchVarFunction);
+
+function fetchVarFunction(){
+
+fetch('../textfiles/varnasi.txt')
+.then(response => response.text())
+.then(data=> {
+    document.getElementById("displayText").innerHTML =""
+    document.getElementById("displayText").innerHTML = data
+})
+.catch(error => console.error(error));
+}
+
+
+let fetchTEXTButton3 = document.getElementById('delhibtn');
+fetchTEXTButton3.addEventListener('click', fetchDelhiFunction);
+
+function fetchDelhiFunction(){
+
+fetch('../textfiles/delhi.txt')
+.then(response => response.text())
+.then(data=> {
+    document.getElementById("displayText").innerHTML =""
+    document.getElementById("displayText").innerHTML = data
+})
+.catch(error => console.error(error));
+}
+
+
+let fetchTEXTButton4 = document.getElementById('mumbaibtn');
+fetchTEXTButton4.addEventListener('click', fetchMumFunction);
+
+function fetchMumFunction(){
+
+fetch('../textfiles/mumbai.txt')
+.then(response => response.text())
+.then(data=> {
+    document.getElementById("displayText").innerHTML =""
+    document.getElementById("displayText").innerHTML = data
+})
+.catch(error => console.error(error));
+}
+
+
+let fetchTEXTButton5 = document.getElementById('amritsarbtn');
+fetchTEXTButton5.addEventListener('click', fetchAmtFunction);
+
+function fetchAmtFunction(){
+
+fetch('../textfiles/amritsar.txt')
+.then(response => response.text())
+.then(data=> {
+    document.getElementById("displayText").innerHTML =""
+    document.getElementById("displayText").innerHTML = data
+})
+.catch(error => console.error(error));
+}

@@ -12,18 +12,9 @@ let filesCache =[
     './css/jquery-3.4.0.slim.min.js',
     './404.html',
     './offline.html',
-    './img/pictures/agra-fort.jpg',
-    './img/pictures/amer-fort.jpg',
-    './img/pictures/ellora-caves.jpg',
     './img/pictures/gateway-india.jpg',
-    './img/pictures/goa-beaches.jpg',
     './img/pictures/harmandir-sahib.jpg',
-    './img/pictures/jaisalmer.jpg',
-    './img/pictures/mahabodhi-temple.jpg',
-    './img/pictures/mecca-masjid.jpg',
-    './img/pictures/mehrangarh-fort.jpg',
     './img/pictures/mysore-palace.jpg',
-    './img/pictures/periyar-national-park-wildlife-sanctuary.jpg',
     './img/pictures/red-fort.jpg',
     './img/pictures/taj-mahal.jpg',
     './img/pictures/varanasi.jpg'
@@ -69,7 +60,6 @@ self.addEventListener('fetch', event =>{
         caches.match(event.request)
         .then(response =>{
             if(response){
-                console.log('Found', event.request.url,'in cache');
                 return response;
             }
             console.log('Network request for',event.request.url);

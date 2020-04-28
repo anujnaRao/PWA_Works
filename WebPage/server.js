@@ -7,9 +7,10 @@ app.use(express.static('public'));
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/images', express.static(__dirname + '/public/img'));
+app.use('/textfiles', express.static(__dirname + '/public/textfiles'));
 
 
-var server = app.listen(9005, function() {
+var server = app.listen(9007, function() {
     var port = server.address().port;
     console.log("Server started at http://localhost:%s", port);
 });

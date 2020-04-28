@@ -47,9 +47,41 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Profile: </h4>
-            
-              
-          
+            <div class="card-text" id="uid">
+
+            </div>
+            <div class="card-text" id="uname">
+
+            </div>
+            <div class="card-text" id="userimg">
+
+            </div>
+            <div class="card-text" id="profile">
+
+            </div>
+            <div class="card-text" id="pro">
+
+            </div>
+            <div class="card-text" id="location">
+
+            </div>
+            <div class="card-text" id="bio">
+
+            </div>
+            <div class="card-text" id="company">
+
+            </div>
+            <div class="card-text" id="created">
+
+            </div>
+            <div class="card-text" id="updated">
+
+            </div>
+            <br>
+            <div class="form-group">
+              <button class="btn btn-secondary" onclick="clearFun()">Clear</button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -61,6 +93,21 @@
 
   <!-- end body -->
   <script src='./js/app.js'></script>
+  <script>
+    function clearFun() {
+      document.getElementById("username").value = ""
+      document.getElementById('uid').innerHTML = ""
+      document.getElementById('uname').innerHTML = ""
+      document.getElementById('userimg').src = ""
+      document.getElementById('profile').innerHTML = ""
+      document.getElementById('pro').href = ""
+      document.getElementById('location').innerHTML = ""
+      document.getElementById('bio').innerHTML = ""
+      document.getElementById('company').innerHTML = ""
+      document.getElementById('created').innerHTML = ""
+      document.getElementById('updated').innerHTML = ""
+    }
+  </script>
 </body>
 
 </html>
