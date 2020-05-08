@@ -1,0 +1,95 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+}
+
+.logo {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    padding-top: 0%;
+    margin-right: 0px;
+}
+ .tcol1{
+     margin-top: 1%;
+     padding: 5px;
+
+ }
+
+.tcol2{
+    margin-top: 1%;
+    padding: 5px;
+
+}
+
+/*.tcontainer{*/
+/*    margin-top: 4%;*/
+/*    margin-bottom: 3%;*/
+/*}*/
+
+
+
+body {
+    background: grey;
+    background: linear-gradient(to bottom left, rgb(150, 46, 115), rgb(16, 92, 54));
+    /* background: no-repeat; */
+    
+}
+
+.main{
+    background: transparent;
+}
+
+.textfont{
+    margin-top: 100px;
+    font-size: 30pt;
+    color: darksalmon;
+    margin-bottom: 5%;
+}
+
+.row{
+    margin-bottom: 5%;
+}
+
+.card-title {
+    margin-top: 0px;
+    padding-bottom: 5px ;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px rgb(26, 44, 95) solid;
+}
+
+
+.card-body {
+    padding: 2rem;
+    border: 1px;
+    text-align: center;
+}
+
+.form-group{
+    padding: 5px;
+    font-weight: bold;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+ .btn {
+    
+    font-weight: bold;
+ }
+
+
+ .card-img{
+     height:200%;
+ }
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

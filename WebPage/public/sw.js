@@ -1,4 +1,3 @@
-const CACHE_NAME = 'version1';
 
 let filesCache =[
     './',
@@ -20,6 +19,8 @@ let filesCache =[
     './img/pictures/varanasi.jpg'
 ];
 
+const CACHE_NAME = 'our-second-cache';
+
 // //Installing
 this.addEventListener('install', event => {
     console.log('Attempting to install service worker and cache static cache')
@@ -31,27 +32,6 @@ this.addEventListener('install', event => {
     );
  self.skipWaiting()
 });
-
-self.addEventListener('activate', eve =>{
-    console.log("Activated");
-})
-
-// self.addEventListener('fetch', function (event) {
-// 	event.respondWith(
-// 		fetch(event.request).catch(function () {
-// 			return caches.match(event.request).then(function (response) {
-// 				if (response) {
-// 					return response;
-// 				} else if (event.request.headers.get('accept').includes('text/html')) {
-// 					return caches.match('./offline.html');
-// 				} else if (response.status === 404) {
-// 					return caches.match('./404.html');
-// 				}
-// 			});
-// 		})
-// 	);
-// });
-
 
 // Dynamic and Static Caching
 self.addEventListener('fetch', event =>{
@@ -77,6 +57,27 @@ self.addEventListener('fetch', event =>{
         .catch( err =>{
             console.error(err);
             return caches.match('offline.html')
+        })
+    )
+})
+
+
+self.addEventListener('activate', event => {
+    console.log('activating a new service worker');
+
+    const cacheWhiteList = [filesCache];
+    
+
+    event.waitUntil(
+        caches.keys()
+        .then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cacheName => {
+                    if (cacheWhiteList.indexOf(cacheName) === -1) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            )
         })
     )
 })
