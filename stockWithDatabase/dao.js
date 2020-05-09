@@ -27,7 +27,7 @@ class AppDAO {
           console.log(err)
           reject(err)
         } else {
-          resolve({ id: this.lastID })
+          resolve({ p_id: this.lastID })
         }
       })
     })
@@ -65,3 +65,4 @@ class AppDAO {
 
 }
 
+module.exports = AppDAO

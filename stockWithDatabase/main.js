@@ -5,41 +5,24 @@ const Stocks = require('./stocks')
 
 function main() {
   const dao = new AppDAO('./database.sqlite3')
-  const blogProjectData = [ {p_name: 'Cycles',  p_stock: 10},}, {p_names}]
+  const blogProjectData = [ {p_name: 'Cycles',  p_stock: 10}, {p_name:'Cars', p_stock: 20},
+                            {p_name: 'Toy Gun',  p_stock: 15}, {p_name:'Dolls', p_stock: 30},
+                            {p_name: 'Puzzel Box',  p_stock: 10}, {p_name:'cars', p_stock: 20}]
   const stockRepo = new Stocks(dao)
-  
-  let productId
-
+  let productID
   stockRepo.createTable()
     .then(() => stockRepo.createTable())
     .then(() => stockRepo.create(blogProjectData.p_name,blogProjectData.p_stock))
     .then((data) => {
-      productId = data.p_id
-      const tasks = [
-        {
-          name: 'Outline',
-          description: 'High level overview of sections',
-          isComplete: 1,
-          projectId
-        },
-        {
-          name: 'Write',
-          description: 'Write article contents and code examples',
-          isComplete: 0,
-          projectId
-        }
-      ]
-      return Promise.all(tasks.map((task) => {
-        const { name, description, isComplete, projectId } = task
-        return taskRepo.create(name, description, isComplete, projectId)
-      }))
+        productID =data.p_id
     })
-    .then(() => projectRepo.getById(projectId))
-    .then((project) => {
+    .then(() => stockRepo.getById(productID))
+    .then((stock) => {
       console.log(`\nRetreived project from database`)
-      console.log(`project id = ${project.id}`)
-      console.log(`project name = ${project.name}`)
-      return projectRepo.getTasks(project.id)
+      console.log(`Stock id = ${stock.p_id}`)
+      console.log(`Stock name = ${stock.p_name}`)
+      console.log(`Stock count = ${stock.p_stock}`)
+      return stockRepo.getAll()
     })
     .catch((err) => {
       console.log('Error: ')

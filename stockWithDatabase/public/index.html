@@ -27,12 +27,13 @@
     <div class="card-body">
 
       <div class="container-fluid">
-        <h3 class="textfont text-center font-weight-bold">Beautiful Places</h3>
+        <h3 class="textfont text-center font-weight-bold">Stocks in Inventory</h3>
         
         <div class="row">
           <div class="col-sm-4 col-md-4 col-lg-4 form-label-group" >
             <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
-                                value="Display Stock" name="displayStock" id="btnDisplay">
+                                value="Display Stock" name="displayStock" id="btnDisplay" 
+                                onclick="getAll()">
           </div>
           <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
             <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
@@ -61,6 +62,8 @@
   </div>
   <!-- end body -->
   <script src='./js/app.js'></script>
+  <script src='./main.js'></script>
+  <script src='./stocks.js'></script>
 </body>
 
 </html>
