@@ -14,8 +14,3 @@ var server = app.listen(9009, function() {
     console.log("Server started at http://localhost:%s", port);
 });
 
-
-//Database integration
-
-const sqlite3 = require('sqlite3').verbose();
-let db = new sqlite3.Database(':memory:');

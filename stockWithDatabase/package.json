@@ -1,0 +1,16 @@
+{
+  "name": "stockwithdatabase",
+  "version": "1.0.0",
+  "description": "Stock display using PWA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Anujna P Rao",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "sqlite3": "^4.2.0"
+  }
+}

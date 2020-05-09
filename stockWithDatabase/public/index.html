@@ -17,7 +17,7 @@
   <script src="./css/tooltip.min.js"></script>
   <link rel="manifest" href="./manifest.json">
 
-  <title>Simple Web Page</title>
+  <title>Stock Display</title>
 </head>
 
 <body>
@@ -30,19 +30,33 @@
         <h3 class="textfont text-center font-weight-bold">Beautiful Places</h3>
         
         <div class="row">
-          
+          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group" >
+            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
+                                value="Display Stock" name="displayStock" id="btnDisplay">
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
+            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
+                                value="Remove Stock" name="removeStock" id="btnRemove">
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
+            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
+                                value="Add Stock" name="addStock" id="btnAdd">
+          </div>
         </div>
-
-        <div class="container">
-          <h3 class=" textfont font-weight-bold text-center">Hey You Wanted To See More !</h3>
-              <div class="card">
-                <div class="card-body">
-                  <div id="displayText" class="card-text">
+        <div class="row">
+          <div class="col-sm=12 col-lg-12 col-md-12">
+            <div class="container">
+                  <div class="card">
+                    <div class="card-body">
+                      <div id="displayText" class="card-text">
+                      </div>
+                    </div>
                   </div>
-                </div>
               </div>
-       </div>
-        
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- end body -->
