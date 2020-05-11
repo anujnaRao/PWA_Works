@@ -28,47 +28,69 @@
 
       <div class="container-fluid">
         <h3 class="textfont text-center font-weight-bold">Stocks in Inventory</h3>
-        
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control " id="email" placeholder="Enter email" name="email" required>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group" >
-            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
-                                value="Display Stock" name="displayStock" id="btnDisplay" 
-                                onclick="getAll()">
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
-            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
-                                value="Remove Stock" name="removeStock" id="btnRemove">
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
-            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
-                                value="Add Stock" name="addStock" id="btnAdd">
-          </div>
-        </div>
+
         <div class="row">
           <div class="col-sm=12 col-lg-12 col-md-12">
             <div class="container">
-                  <div class="card">
-                    <div class="card-body">
-                      <div id="displayText" class="card-text">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control " id="stockId" placeholder="Enter Id" name="stockId"
+                          required>
                       </div>
                     </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control " id="stockNumber" placeholder="Enter stock"
+                          name="stockNumber" required>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2 col-md-2 col-lg-2 form-label-group">
+                      <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2" value="Remove Stock"
+                        name="removeStock" id="btnRemove">
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 form-label-group">
+                      <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2" value="Add Stock"
+                        name="addStock" id="btnAdd">
+                    </div>
                   </div>
+
+
+                  <div class="row">
+                   
+                    <div class="col-sm-8 col-lg-8 col-md-8">
+                      <div class="container">
+                        <div class="card">
+                          <div class="card-body">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
+                      <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2" value="Display Stock"
+                        name="displayStock" id="btnDisplay">
+                    </div>
+                  </div>
+
+
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+       
       </div>
+
     </div>
+  </div>
   </div>
   <!-- end body -->
   <script src='./js/app.js'></script>
