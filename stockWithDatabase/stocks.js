@@ -46,4 +46,5 @@ class Stocks{
 
   }
   
+  
   module.exports = Stocks;

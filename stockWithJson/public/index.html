@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="theme-color" content="#2196f3">
+  <!-- Bootstrap CSS -->
+  <link rel="icon" href="./icon-384x384.png">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./css/jquery-3.4.0.slim.min.js"></script>
+  <script src="./css/bootstrap.js"></script>
+  <script src="./css/popper.min.js"></script>
+  <script src="./css/tooltip.min.js"></script>
+  <link rel="manifest" href="./manifest.json">
+
+  <title>Stock Display</title>
+</head>
+
+<body>
+  <!-- start body -->
+
+  <div class="card main">
+    <div class="card-body">
+
+      <div class="container-fluid">
+        <h3 class="textfont text-center font-weight-bold">Stocks in Inventory</h3>
+        
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control " id="email" placeholder="Enter email" name="email" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group" >
+            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
+                                value="Display Stock" name="displayStock" id="btnDisplay" 
+                                onclick="getAll()">
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
+            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
+                                value="Remove Stock" name="removeStock" id="btnRemove">
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 form-label-group">
+            <input type="button" class="btn btn-lg btn-primary font-weight-bold mb-2"
+                                value="Add Stock" name="addStock" id="btnAdd">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm=12 col-lg-12 col-md-12">
+            <div class="container">
+                  <div class="card">
+                    <div class="card-body">
+                      <div id="displayText" class="card-text">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- end body -->
+  <script src='./js/app.js'></script>
+  <script src='./main.js'></script>
+  <script src='./stocks.js'></script>
+</body>
+
+</html>
