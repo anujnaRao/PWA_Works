@@ -15,6 +15,14 @@ def show(reque):
     return render(reque, 'display.html', {'shelf': shelf})
 
 
+class Offline(TemplateView):
+    template_name = 'offline.html'
+
+
+class PageError(TemplateView):
+    template_name = '404Page.html'
+
+
 class InsertProduct(TemplateView):
     def get(self, request, *args, **kwargs):
         product = request.GET['product']

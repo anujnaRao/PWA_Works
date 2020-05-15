@@ -16,11 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from stockApp import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='index'),
     path('insert/', views.InsertProduct.as_view()),
     path('update/', views.UpdateStock.as_view()),
-    path('display/', views.show, name='display')
+    path('display/', views.show, name='display'),
+    path('offline/', views.Offline.as_view()),
+    path('errorPage/',views.PageError.as_view()),
+    path('sw.js', (TemplateView.as_view(template_name="sw.js", content_type='application/javascript', )), name='sw.js')
 ]
+
+urlpatterns += staticfiles_urlpatterns()

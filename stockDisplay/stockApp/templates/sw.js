@@ -2,16 +2,14 @@ const CACHE_NAME = 'ver1';
 
 let filesCache =[
     './',
-    './index.html',
+    './templates/index.html',
     './js/app.js',
-    './css/bootstrap.css',
-    './css/bootstrap.js',
-    './css/popper.min.js',
-    './css/tooltip.min.js',
-    './css/style.css',
-    './css/jquery-3.4.0.slim.min.js',
-    './404.html',
-    './offline.html'
+    './bootstrap/css/bootstrap.css',
+    './bootstrap/css/bootstrap.js',
+    './bootstrap/css/popper.min.js',
+    './bootstrap/css/tooltip.min.js',
+    './template/404.html',
+    './template/offline.html'
 ];
 
 // // //Installing
