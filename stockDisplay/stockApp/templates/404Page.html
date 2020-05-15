@@ -1,10 +1,26 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock App</title>
+    <link rel="icon" href="{% static 'img/icons/icon-96x96.png' %}" sizes="16x16">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="manifest" href="{% static 'manifest.json' %}">
+
 </head>
 <body>
+<main>
+    <h3 class="text-center font-weight-bold text-danger">404 Page Not Found</h3>
+</main>
 
+<script src="{% static 'bootstrap/js/jquery-min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+<script src="{% static 'bootstrap/js/tooltip.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

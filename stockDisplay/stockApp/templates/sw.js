@@ -1,15 +1,10 @@
 const CACHE_NAME = 'ver1';
 
 let filesCache =[
-    './',
-    './templates/index.html',
-    './js/app.js',
-    './bootstrap/css/bootstrap.css',
-    './bootstrap/css/bootstrap.js',
-    './bootstrap/css/popper.min.js',
-    './bootstrap/css/tooltip.min.js',
-    './template/404.html',
-    './template/offline.html'
+    '/offline',
+    '/static/manifest.json',
+    '/errorPage',
+
 ];
 
 // // //Installing

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e57bd089-5f80-4700-be86-2ea1e99ce325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockApp/templates/404Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/404Page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockApp/templates/display.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/display.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockApp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockApp/templates/offline.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/offline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockApp/templates/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockDisplay/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockDisplay/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +83,7 @@
       <updated>1589442067736</updated>
       <workItem from="1589442088917" duration="6316000" />
       <workItem from="1589514048932" duration="3820000" />
-      <workItem from="1589554203439" duration="2559000" />
+      <workItem from="1589554203439" duration="3484000" />
     </task>
     <servers />
   </component>
