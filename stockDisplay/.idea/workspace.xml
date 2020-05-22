@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e57bd089-5f80-4700-be86-2ea1e99ce325" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockApp/templates/404Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/404Page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockApp/templates/display.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/display.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockApp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockApp/templates/offline.html" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/offline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockApp/templates/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/stockApp/templates/sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockDisplay/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockDisplay/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +33,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../STP" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -83,7 +77,8 @@
       <updated>1589442067736</updated>
       <workItem from="1589442088917" duration="6316000" />
       <workItem from="1589514048932" duration="3820000" />
-      <workItem from="1589554203439" duration="3484000" />
+      <workItem from="1589554203439" duration="4093000" />
+      <workItem from="1589570609367" duration="28000" />
     </task>
     <servers />
   </component>
@@ -91,6 +86,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1589570634857">
+      <screen x="0" y="0" width="1536" height="832" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1589570634857" />
     <state x="296" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1589554239304">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
